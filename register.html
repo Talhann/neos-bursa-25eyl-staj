@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid width">
+          <li class="nav-item dropdown list-unstyled">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bars"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+        <a class="navbar-brand" href="#">
+          <img class="rounded-5" width="50rem" src="img/logo.png" alt="">
+          stack<p class="fw-bold d-inline">overflow</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item m-2">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#">For Teams</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">
+              <a target="_blank" class="text-decoration-none text-black" href="login.html">Log in</a>
+            </button>
+            <button class="btn btn-primary" type="submit">
+              <a target="_blank" class="text-decoration-none text-black" href="register.html">Sign Up</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container d-flex flex-column mt-2">
+
+
+        <div class="content-register d-flex flex-row justify-content-around">
+
+            <div class="list-items-register w-50">
+                <ul class=" d-flex flex-column list-unstyled">
+                    <h2 class="mb-4">Join the Stack Overflow community</h2>
+                    <li><i class="fa-solid fa-comment fa-xl me-2 mb-4" style="color: #000000;"></i>Takıldığınız bir yer var ise — soru sorabilirsiniz</li>
+                    <li><i class="fa-regular fa-thumbs-up fa-xl me-2 mb-4" style="color: #000000;"></i>Beğenme ve yorum yapma gibi yeni ayrıcalıkları açın.</li>
+                    <li><i class="fa-solid fa-tag fa-xl me-2 mb-4" style="color: #050505;"></i>Favori sorularınızı ve cevaplarınızı kaydedin, etiketleri izleyin ve daha fazlasını yapın.</li>
+                    <li><i class="fa-solid fa-award fa-xl me-2 mb-4" style="color: #000000;"></i>İtibar ve rozetler kazanın.</li>
+                </ul>
+
+            </div>
+            <div class="sign-up-form w-25">
+                <div class="d-flex flex-column ">
+                    <button id="w-google" class="sign-up rounded-5 bg-light"><i class="fa-brands fa-google me-2"
+                            style="color: #030303;"></i>Google ile Kayıt ol</button>
+                    <button id="w-github" class="sign-up rounded-5 bg-black text-light"><i
+                            class="fa-brands fa-github me-2" style="color: #ffffff;"></i>GitHub ile Kayıt ol</button>
+                    <button id="w-facebook" class="sign-up rounded-5 bg-primary text-light"><i
+                            class="fa-brands fa-facebook me-2" style="color: #ffffff;"></i>Facebook ile Kayıt ol</button>
+                </div>
+                <form class="form-register bg-white p-4 rounded-5">
+                    <div class="form-group mb-lg-4">
+                        <label for="username">Kullanıcı Adı</label>
+                        <input type="text" class="form-control" id="username" placeholder="Kullanıcı Adı">
+                    </div>
+                    <div class="form-group mb-lg-4">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Email Giriniz">
+                    </div>
+                    <div class="form-group mb-lg-4">
+                        <label for="exampleInputPassword1">Şifre</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Şifre">
+                    </div>
+                    <div class="form-check mb-4">
+                        <input type="checkbox" class="form-check-input" id="recaptha">
+                        <label for="recaptha" class="form-check-label">Robot Değilim</label>
+
+                    </div>
+                    <div class="form-check mb-4">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"><small>
+                           Ara sıra ürün güncellemeleri, kullanıcı araştırma davetleri, şirket duyuruları ve özetlerini almak için izin verin.</small></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-center w-100 mb-4">Kayıt Ol</button>
+                    <small class="fw-lighter">
+                        "Kaydol" düğmesine tıkladığınızda, hizmet şartlarımızı kabul etmiş olursunuz ve gizlilik politikamızı ile davranış kurallarımızı okuyup anladığınızı onaylarsınız.</small>
+                </form>
+                <div class="text-center mt-3" >
+                    <small>Zaten hesabın var mı? <a href=""><b>Giriş Yap</b></a></small>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
